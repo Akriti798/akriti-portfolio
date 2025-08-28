@@ -34,7 +34,7 @@ export default function Portfolio() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["hero", "about", "skills", "experience", "projects", "achievements", "certificates", "contact"]
+      const sections = ["hero", "About", "Education", "Skills", "Experience", "Projects", "Achievements", "Certificates", "Contact"]
       const scrollPosition = window.scrollY + 100
 
       for (const section of sections) {
@@ -351,14 +351,14 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Programming",
+                title: "Programming & Frameworks",
                 icon: Code,
                 skills: ["C++", "Python", "Tailwind CSS", "JavaScript", "Reactjs", "Node.js"],
               },
               {
                 title: "Tools & Platforms",
                 icon: Zap,
-                skills: ["Google Cloud Platform", "GitHub", "REST APIs", "Docker",  "Figma"],
+                skills: ["Google Cloud Platform", "GitHub",  "Netlify",  "Framer", "REST APIs", "Docker",  "Figma"],
               },
               {
                 title: "Soft Skills",
@@ -412,10 +412,18 @@ export default function Portfolio() {
             {[
               {
                 title: "DRDO (SAG - Scientific Analysis Group) Intern",
-                period: "2025",
+                period: "July 2025 - Present",
                 description:
                   "Built real-time DDoS detection system with 90%+ accuracy using AI and machine learning algorithms.",
                 icon: Shield,
+              },
+              {
+                title: "Technical Team Lead - InspireX E-Cell GGCT",
+                company: "InspireX E-Cell, GGCT",
+                period: "2025 - Present",
+                description:
+                  "Leading technical initiatives and managing development teams for entrepreneurship cell projects and events.",
+                icon: Users,
               },
               // {
               //   title: "Google Cloud Facilitator Program",
