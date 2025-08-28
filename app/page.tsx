@@ -565,7 +565,7 @@ export default function Portfolio() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold mb-4">Achievements</h2>
+            <h2 className="text-4xl font-bold mb-4">Achievements & Awards </h2>
             <div className="w-24 h-1 bg-accent mx-auto"></div>
           </motion.div>
 
@@ -585,7 +585,7 @@ export default function Portfolio() {
               },
               {
                 title: "Problem Solving",
-                description: "230+ LeetCode, 240+ GFG",
+                description: "230+ LeetCode, 240+ GFG problems solved",
                 icon: Target,
               },
               {
@@ -594,6 +594,19 @@ export default function Portfolio() {
                 icon: Star,
                 certificate: "https://drive.google.com/file/d/1HKmoafDotoOMdrMWjU7J_hUMz-3rX3eY/view?usp=sharing"
               },
+              
+              {
+                title: "IDE Bootcamp",
+                description: "Completed intensive development program",
+                icon: Code,
+                certificate: "https://drive.google.com/file/d/14bIsZZpMFsZGw046zNO13ZSEQ56XGDKx/view?usp=sharing"
+              },
+              {
+                title: "NCC A Certificate",
+                description: "National Cadet Corps certification",
+                icon: Award,
+                certificate: "https://drive.google.com/file/d/1oeQKTRyqfRH8lzyH76w43-4Mb_je7S1u/view?usp=sharing"
+                },
             ].map((achievement, index) => (
               <motion.div
                 key={achievement.title}
@@ -651,11 +664,11 @@ export default function Portfolio() {
     },
     {
       title: "Cisco Cybersecurity Essentials",
-      certificate: "https://drive.google.com/file/d/1cB0CDIpPGy0xuYyA_pOvCAoATe1OYwFm/view?usp=sharing",
+      certificate: "https://drive.google.com/file/d/1daiMG6xEwvtD_4W1GBGfngGakuVNsDNo/view?usp=sharing",
     },
     {
       title: "Paloalto Cybersecurity Internship",
-      certificate: "https://www.cloudskillsboost.google/public_profiles/68ce9607-75e9-4554-9934-9058d89382cb",
+      certificate: "https://drive.google.com/file/d/1cB0CDIpPGy0xuYyA_pOvCAoATe1OYwFm/view?usp=sharing",
     },
   ].map((cert, index) => (
     <motion.div
@@ -718,18 +731,30 @@ export default function Portfolio() {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <Button variant="outline" className="neon-glow-hover bg-transparent">
-                  <Github className="w-4 h-4 mr-2" />
-                  GitHub
-                </Button>
-                <Button variant="outline" className="neon-glow-hover bg-transparent">
-                  <Linkedin className="w-4 h-4 mr-2" />
-                  LinkedIn
-                </Button>
-                <Button variant="outline" className="neon-glow-hover bg-transparent">
+               <a
+  href="https://github.com/Akriti798"   // replace with your GitHub link
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button variant="outline" className="neon-glow-hover bg-transparent">
+    <Github className="w-4 h-4 mr-2" />
+    GitHub
+  </Button>
+</a>
+                <a
+  href="https://www.linkedin.com/in/akritishrivastava798/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button variant="outline" className="neon-glow-hover bg-transparent">
+    <Linkedin className="w-4 h-4 mr-2" />
+    LinkedIn
+  </Button>
+</a>
+                {/* <Button variant="outline" className="neon-glow-hover bg-transparent">
                   <Code className="w-4 h-4 mr-2" />
                   LeetCode
-                </Button>
+                </Button> */}
               </div>
             </motion.div>
 
@@ -739,7 +764,7 @@ export default function Portfolio() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <Card className="glass neon-glow-hover">
+              {/* <Card className="glass neon-glow-hover">
                 <CardHeader>
                   <CardTitle>Send a Message</CardTitle>
                 </CardHeader>
@@ -752,7 +777,7 @@ export default function Portfolio() {
                     Send Message
                   </Button>
                 </CardContent>
-              </Card>
+              </Card> */}
             </motion.div>
           </div>
         </div>
@@ -762,7 +787,7 @@ export default function Portfolio() {
       <footer className="py-8 bg-card/50 backdrop-blur-sm border-t border-border/50">
         <div className="container mx-auto px-4 text-center">
           <p className="text-muted-foreground">
-            © 2024 Akriti Shrivastava. Built with React, Tailwind CSS, and Framer Motion.
+            {/* © 2024 Akriti Shrivastava. Built with React, Tailwind CSS, and Framer Motion. */}
           </p>
         </div>
       </footer>
